@@ -1,0 +1,222 @@
+@r:50rem;
+
+a,
+input,
+button {
+    /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+    /*清除按钮的圆角*/
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+    /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+//overflow: hidden;
+//overflow: auto;
+}
+html{
+  width: 100%;
+  height: 100%;
+//overflow: hidden;
+}
+body * {
+    /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background: #EEEEEE;
+}
+//清除浮动
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+body{
+    background: #EEEEEE;
+}
+
+
+//header头部
+#header{
+    width: 100%;
+    height: 90/@r;
+    background: #FFFFFF;
+    .home_btn{
+        float: left;
+        display: block;
+        width: 60/@r;
+        height: 90/@r;
+        background: url(../img/home_btn.png) no-repeat center;
+        background-size: contain;
+        margin: 0 25/@r;
+    }
+    .search_input{
+        float: left;
+        width: 532/@r;
+        height: 56/@r;
+        border-radius: 8/@r;
+        padding: 10/@r 10/@r 10/@r 55/@r;
+        margin-top: 16/@r;
+        color: #333333;
+        font-size: 28/@r;
+        background: url(../img/search.png) #F4F4F4 no-repeat 20/@r center;
+        background-size: auto 26/@r;
+        border: none;
+        outline: none;
+    }
+    .right_btn{
+        float: left;
+        width: 100/@r;
+        height: 74/@r;
+        margin-top: 8/@r;
+        background: url(../img/chat.png) no-repeat center center;
+        background-size: 36/@r 32/@r;
+        text-align: center;
+        line-height: 74/@r;
+        font-size: 26/@r;
+        color: #666666;
+    }
+    .active{
+        background: none;
+    }
+}
+//搜索列表
+.search_list{
+    visibility: hidden;
+    width: 100%;
+    background: #FFFFFF;
+    position: absolute;
+    left: 0;
+    top: 89/@r;
+    overflow: auto;
+    z-index: 9999;
+    .search_wrap{
+        .icon{
+            display: inline-block;
+            width: 24/@r;
+            height: 33/@r;
+            background: url(../img/hot.png) no-repeat;
+            background-size: contain;
+            margin-left: 20/@r;
+            margin-top: 50/@r;
+            vertical-align: middle;
+            margin-bottom: 20/@r;
+        }
+        .title{
+            display: inline-block;
+            font-weight: normal;
+            font-size: 32/@r;
+            color: #666666;
+            margin-top: 50/@r;
+            vertical-align: middle;
+            margin-bottom: 20/@r;
+        }
+        .list{
+            margin-left: 30/@r;
+            li{
+                float: left;
+                padding: 10/@r 20/@r;
+                background: #F4F4F4;
+                border-radius: 20/@r;
+                margin-top: 30/@r;
+                margin-left: 20/@r;
+                font-size:26/@r;
+                a{
+                    color: #666;
+                }
+            }
+            li:nth-of-type(1) a{
+                color: #f36;
+            }
+            li:nth-of-type(3) a{
+                color: #f36;
+            }
+            li:nth-of-type(5) a{
+                color: #f36;
+            }
+            li:nth-of-type(6) a{
+                color: #f36;
+            }
+            li:nth-of-type(8) a{
+                color: #f36;
+            }
+        }
+    }
+    .list_wrap{
+        li{
+            margin-left: 50/@r;
+            border-bottom: 1px solid #D8D8D8;
+            height: 70/@r;
+            line-height: 70/@r;
+            font-size: 26/@r;  
+            a{
+                color: #666666;
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+            
+    }
+ }
+
+//尾部
+.footer{
+    width: 100%;
+    height: 100/@r;
+    background: #fafafa;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 250;
+    border-top: 1px solid #E5E5E5;
+    margin: 0 auto;
+    a{
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+        color: #666666;
+        overflow: hidden;
+        padding-bottom: 10/@r;
+        -webkit-box-flex: 1;
+        float: left;
+        width: 25%;
+        i{
+            margin: 8/@r auto;
+            margin-top: 13/@r;
+            display: block;
+            text-align: left;
+            width: 38/@r;
+            height: 38/@r;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        span{
+            font-size: 28/@r;
+            display: block;
+        }
+        .f_active{
+            color: #FF3366;
+        }
+    }
+}

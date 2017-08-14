@@ -1,0 +1,276 @@
+@r:50rem;
+a,
+input,
+button {
+    /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+    /*清除按钮的圆角*/
+  -webkit-appearance: none; 
+  border-radius: 0;
+}
+body { 
+    /*选中文字设置*/
+  margin: 0; 
+  -webkit-user-select: none; 
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+html{
+  width: 100%;
+  height: 100%;
+}
+body * {
+    /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+//清除浮动
+.clearfix:after{
+   clear: both;
+   content: '';
+   display: block;
+}
+//导航栏
+.homeTemptation_nav{
+    width: 100%;
+    height: 86/@r;
+    line-height: 86/@r;
+    font-size: 32/@r;
+    color: #666;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    ul{
+        width: 100%;
+        height: 100%;
+        li{
+            text-align: center;
+            width: 33%;
+            float: left;
+            height: 100%;
+        }
+        p{
+            text-align: center;
+            width: 33%;
+            float: left;
+            height: 100%;
+            position: relative;
+            span{
+                position: absolute;
+                display: block;
+                font-family: simsun;
+                font-size: 50/@r;
+                right: 25/@r;
+                top: 0;
+                transform: rotateZ(-90deg);
+                transition: .5s all linear;
+            }
+        }
+        .active{         
+            color: #ef4562;
+            span{
+                color: #666;
+            }
+        }
+    } 
+    //筛选面板
+    .homeTemptation_sort{
+        background-color: #fff;
+        display: none;
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 16/@r;
+        ol{
+            overflow: hidden;
+            margin-top: 22/@r;
+            width: 100%;
+            height: 62/@r;
+            li{
+                width: 33%;
+                float: left;
+                text-align: center;
+                height: 62/@r;
+                span{
+                    height: 62/@r;
+                    line-height: 62/@r;
+                    width: 90%;
+                    display: inline-block;
+                    background-color: #f3f3f3;
+                }
+            }
+        }
+        .homeTemptation_sort_data{
+            margin-top: 50/@r;
+            width: 100%;
+            margin-bottom: 10/@r;
+            padding-left: 20/@r;
+            span{
+                display: block;
+                float: left;
+                line-height: 63/@r;
+            }
+            input{
+                margin: 0 16/@r;
+                border: none;
+                outline: none;
+                display: block;
+                float: left;
+                border-radius: 5/@r;
+                width: 23%;
+                height: 63/@r;
+                border: 1/@r solid #e5e5e5;
+                text-indent: .5em;
+            }
+            button{
+                float: left;
+                width: 17%;
+                height: 70/@r;
+                border: none;
+                outline: none;
+                border-radius: 5/@r;
+            }
+            #clearTxt{
+                border: 1px solid #ff5b76;
+                color: #ff5b76;
+                background-color: #FFFFFF;
+            }
+            #submitTxt{
+                margin-left: 16/@r;
+                background-color: #ff5b76;
+                color: white;
+                border: 1px solid #ff5b76;
+            }
+        }
+    }
+}
+//商品列表
+.homeTemptation_type_goodsList{
+    width: 100%;
+    margin-top: 86/@r;
+    height: 2000/@r;
+    .homeTemptation_type_goods{
+        display: block;
+        width: 50%;
+        height: 620/@r;
+        float: left;
+        font-size: 26/@r;
+        color: #555555;
+        text-decoration: none;
+        .homeTemptation_type_goods_img{
+            width: 100%;
+            text-align: center;
+            position: relative;
+            height: 464/@r;
+            img{
+                width: 95%;
+                height: 464/@r;
+                background: #f5f5f5 url(../img/loading_bg.png) no-repeat center center;
+                background-size: 50%;
+            }
+            .homeTemptation_type_goods_tag{  
+                position: absolute; 
+                left: 4%; 
+                bottom: 0;
+                width: 73/@r;
+                height: 35/@r;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    background: none;
+                }
+            }
+        }
+        .homeTemptation_type_goods_price{
+            margin-top: .5em;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            color: #f46c77;
+            font-size: 30/@r;
+            del{
+                font-size: 30/@r;
+                color: #999;
+            }
+        }
+        .homeTemptation_type_goods_beBuy{
+            margin-top: .5em;
+            font-size: 28/@r;
+            width: 100%;
+            text-align: center; 
+            color: #999;
+        }
+        .homeTemptation_type_goods_title{
+            color: #3c2402;
+            margin: 0 auto;
+            margin-top: .5em;
+            width: 95%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            height: 1em;
+            text-align: center;
+        }
+    }
+}
+//返回顶部
+.totop{
+    width: 86/@r;
+    position: fixed;
+    bottom: 140/@r;
+    right: 20/@r;
+    display: none;
+    img{
+        width: 100%;
+    }
+}
+
+//尾部
+.footer{
+    width: 100%;
+    height: 100/@r;
+    background: #fafafa;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 250;
+    border-top: 1px solid #E5E5E5;
+    margin: 0 auto;
+    a{
+        text-decoration: none;
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+        color: #666666;
+        overflow: hidden;
+        padding-bottom: 10/@r;
+        -webkit-box-flex: 1;
+        float: left;
+        width: 25%;
+        i{
+            margin: 8/@r auto;
+            margin-top: 13/@r;
+            display: block;
+            text-align: left;
+            width: 38/@r;
+            height: 38/@r;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        span{
+            font-size: 28/@r;
+            display: block;
+        }
+        .f_active{
+            color: #FF3366;
+        }
+    }
+}

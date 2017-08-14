@@ -1,0 +1,310 @@
+@r:50rem;
+a,
+input,
+button {
+    /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+    /*清除按钮的圆角*/
+  -webkit-appearance: none; 
+  border-radius: 0;
+}
+body { 
+    /*选中文字设置*/
+  margin: 0; 
+  -webkit-user-select: none; 
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #f4f4f4;
+}
+html{
+  width: 100%;
+  height: 100%;
+}
+body * {
+    /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+//清除浮动
+.clearfix:after{
+   clear: both;
+   content: '';
+   display: block;
+}
+//个人中心导航
+.myCenter_nav{
+    background-color: #ffffff;
+    width: 100%;
+    height: 108/@r;
+    line-height: 108/@r;
+    border-bottom: 2/@r solid #dddddd;
+    text-align: center;
+    color: #666;
+    font-size: 40/@r;
+    position: relative;
+    i{
+        top: 0;
+        display: block;
+        position: absolute;
+        font-family: simsun;
+        font-size: 50/@r;
+        left: 36/@r;
+    }
+    b{
+        top: 0;
+        position: absolute;
+        right: 36/@r;
+        display: block;
+        text-decoration: none;
+        color: #666666;
+    }
+}
+//个人收藏
+.myCenter_collection{
+    width: 100%;
+    height: 370/@r;
+    background: url(../img/myCenterCollectionBg.jpg) no-repeat;
+    background-size: 100% 100%;
+    border-bottom: 2/@r solid #ffffff;
+    overflow: hidden;
+    .myCenter_headAndName{
+        width: 100%;
+        height: 230/@r;
+        overflow: hidden;
+        border-bottom: 1/@r solid rgba(255,255,255,.5);
+        .myCenter_headPortrait{
+            margin-top: 40/@r;
+            text-align: center;
+            img{
+                width: 106/@r;
+                border-radius: 53/@r;
+            }
+        }
+        .myCenter_name{
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 36/@r;
+        }
+    }
+    .myCenter_collectionInf{
+        width: 100%;
+        height: 139/@r;
+        ul{
+            width: 100%;
+            height: 139/@r;
+            li{
+                width: 25%;
+                height: 139/@r;
+                font-size: 27/@r;
+                text-align: center;
+                color: #ffffff;
+                float: left;
+                span{
+                    display: block;
+                    height: 50%;
+                    box-sizing: border-box;
+                    padding-top: 20/@r;
+                    font-size: 40/@r;
+                    .coupon{
+                        display: inline-block;
+                        width: 30/@r;
+                        height: 45/@r;
+                        background: url(../img/myCenterSprite.png) no-repeat 0 -102/@r;
+                        background-size: 313/@r;
+                    }
+                    .address{
+                        display: inline-block;
+                        width: 30/@r;
+                        height: 45/@r;
+                        background: url(../img/myCenterSprite.png) no-repeat 0 -214/@r;
+                        background-size: 313/@r;
+                    }
+                }
+                p{
+                    height: 50%;
+                }
+            }
+            .border_right{
+                width: 24%;
+                border-right: 1/@r solid rgba(255,255,255,.5);
+            }
+        }
+    }
+}
+//个人中心分享
+.myCenter_share{
+    height: 98/@r;
+    line-height: 98/@r;
+    margin-top: 18/@r;
+    background-color: #ffffff;
+    color: #666666;
+    img{
+        display: block;
+        float: left;
+        height: 62/@r;
+        margin-top: 18/@r;
+        margin-left: 28/@r;
+    }
+    .myCenter_share_recommend{
+        font-size: 38/@r;
+        float: left;
+        margin-left: 18/@r;
+    }
+    .myCenter_toShare{
+        float: right;
+        font-size: 29/@r;
+        margin-right: 28/@r;
+        i{
+            margin-left: 18/@r;
+            font-family: simsun;
+        }
+    }
+}
+//个人中心订单
+.myCenter_orderForm{
+    background-color: #ffffff;
+    margin-top: 24/@r;
+    height: 126/@r;
+    width: 100%;
+    ul{
+        width: 100%;
+        height: 126/@r;
+        li{
+            text-align: center;
+            width: 25%;
+            float: left;
+            height: 126/@r;
+            font-size: 28/@r;
+            color: #666666;
+            span{
+                height: 50%;
+                display: block;
+                box-sizing: border-box;
+                padding-top: 18/@r;
+                i{
+                    display: inline-block;
+                    width: 40/@r;
+                    height: 40/@r;
+                    background: url(../img/myCenterSprite.png) no-repeat;
+                    background-size: 313/@r;
+                    background-position-y: bottom;
+                }
+                
+            }
+            p{
+                padding-top: 10/@r;
+            }
+        }
+        li:nth-child(1) i{
+            background-position-x: 8/@r;
+        }
+        li:nth-child(2) i{
+            background-position-x: -85/@r;
+        }
+        li:nth-child(3) i{
+            background-position-x: -179/@r;
+        }
+        li:nth-child(4) i{
+            background-position-x: -274/@r;
+        } 
+        .active{
+            span{
+                i{
+                    background-position-y: -270/@r;
+                }
+            }
+            p{
+                color: #FF3366; 
+            }
+        }
+    }
+}
+//个人中心订单页
+.myCenter_orderFormPage{
+    width: 100%;
+    height: 470/@r;
+    .myCenter_orderForm_emptyPage{
+        width: 100%;
+        height: 100%;
+//      display: none;
+        p{
+            width: 100%;
+            text-align: center;
+            font-size: 32/@r;
+            color: #666666;
+            img{
+                margin-top: 60/@r;
+                width: 228/@r;
+                margin-bottom: 15/@r;
+            }
+        }
+        .myCenter_orderForm_emptyMessage{
+            margin-top: 70/@r;
+            text-align: center;
+            font-size: 30/@r;
+            color: #999999;
+            transform: scale(.6);
+        }
+    }
+    .myCenter_orderForm_orderFormPage{
+        width: 100%;
+        height: 100%;
+        display: none;
+//      display: block;
+        text-align: center;
+        a{
+            display: inline-block;
+            margin-top: 200/@r;
+            color: #FF3366; 
+            text-decoration: none;
+        }
+    }
+}
+//尾部
+.footer{
+    width: 100%;
+    height: 100/@r;
+    background: #fafafa;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 250;
+    border-top: 1px solid #E5E5E5;
+    margin: 0 auto;
+    a{
+        text-decoration: none;
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+        color: #666666;
+        overflow: hidden;
+        padding-bottom: 10/@r;
+        -webkit-box-flex: 1;
+        float: left;
+        width: 25%;
+        i{
+            margin: 8/@r auto;
+            margin-top: 13/@r;
+            display: block;
+            text-align: left;
+            width: 38/@r;
+            height: 38/@r;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        span{
+            font-size: 28/@r;
+            display: block;
+        }
+        .f_active{
+            color: #FF3366;
+        }
+    }
+}

@@ -1,0 +1,267 @@
+a,
+input,
+button {
+  /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+  /*清除按钮的圆角*/
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+  /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body * {
+  /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.CharmCondoleBelt_nav {
+  width: 100%;
+  height: 1.72rem;
+  line-height: 1.72rem;
+  font-size: 0.64rem;
+  color: #666;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.CharmCondoleBelt_nav ul {
+  width: 100%;
+  height: 100%;
+}
+.CharmCondoleBelt_nav ul li {
+  text-align: center;
+  width: 33%;
+  float: left;
+  height: 100%;
+}
+.CharmCondoleBelt_nav ul p {
+  text-align: center;
+  width: 33%;
+  float: left;
+  height: 100%;
+  position: relative;
+}
+.CharmCondoleBelt_nav ul p span {
+  position: absolute;
+  display: block;
+  font-family: simsun;
+  font-size: 1rem;
+  right: 0.5rem;
+  top: 0;
+  transform: rotateZ(-90deg);
+  transition: .5s all linear;
+}
+.CharmCondoleBelt_nav ul .active {
+  color: #ef4562;
+}
+.CharmCondoleBelt_nav ul .active span {
+  color: #666;
+}
+.CharmCondoleBelt_nav .CharmCondoleBelt_sort {
+  background-color: #fff;
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 0.32rem;
+}
+.CharmCondoleBelt_nav .CharmCondoleBelt_sort ol {
+  overflow: hidden;
+  margin-top: 0.44rem;
+  width: 100%;
+  height: 1.24rem;
+}
+.CharmCondoleBelt_nav .CharmCondoleBelt_sort ol li {
+  width: 33%;
+  float: left;
+  text-align: center;
+  height: 1.24rem;
+}
+.CharmCondoleBelt_nav .CharmCondoleBelt_sort ol li span {
+  height: 1.24rem;
+  line-height: 1.24rem;
+  width: 90%;
+  display: inline-block;
+  background-color: #f3f3f3;
+}
+.CharmCondoleBelt_nav .CharmCondoleBelt_sort .CharmCondoleBelt_sort_data {
+  margin-top: 1rem;
+  width: 100%;
+  margin-bottom: 0.2rem;
+  padding-left: 0.4rem;
+}
+.CharmCondoleBelt_nav .CharmCondoleBelt_sort .CharmCondoleBelt_sort_data span {
+  display: block;
+  float: left;
+  line-height: 1.26rem;
+}
+.CharmCondoleBelt_nav .CharmCondoleBelt_sort .CharmCondoleBelt_sort_data input {
+  margin: 0 0.32rem;
+  border: none;
+  outline: none;
+  display: block;
+  float: left;
+  border-radius: 0.1rem;
+  width: 23%;
+  height: 1.26rem;
+  border: 0.02rem solid #e5e5e5;
+  text-indent: .5em;
+}
+.CharmCondoleBelt_nav .CharmCondoleBelt_sort .CharmCondoleBelt_sort_data button {
+  float: left;
+  width: 17%;
+  height: 1.4rem;
+  border: none;
+  outline: none;
+  border-radius: 0.1rem;
+}
+.CharmCondoleBelt_nav .CharmCondoleBelt_sort .CharmCondoleBelt_sort_data #clearTxt {
+  border: 1px solid #ff5b76;
+  color: #ff5b76;
+  background-color: #FFFFFF;
+}
+.CharmCondoleBelt_nav .CharmCondoleBelt_sort .CharmCondoleBelt_sort_data #submitTxt {
+  margin-left: 0.32rem;
+  background-color: #ff5b76;
+  color: white;
+  border: 1px solid #ff5b76;
+}
+.CharmCondoleBelt_type_goodsList {
+  width: 100%;
+  margin-top: 1.72rem;
+  height: 40rem;
+}
+.CharmCondoleBelt_type_goodsList .CharmCondoleBelt_type_goods {
+  display: block;
+  width: 50%;
+  height: 12.4rem;
+  float: left;
+  font-size: 0.52rem;
+  color: #555555;
+  text-decoration: none;
+}
+.CharmCondoleBelt_type_goodsList .CharmCondoleBelt_type_goods .CharmCondoleBelt_type_goods_img {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  height: 9.28rem;
+}
+.CharmCondoleBelt_type_goodsList .CharmCondoleBelt_type_goods .CharmCondoleBelt_type_goods_img img {
+  width: 95%;
+  height: 9.28rem;
+  background: #f5f5f5 url(../img/loading_bg.png) no-repeat center center;
+  background-size: 50%;
+}
+.CharmCondoleBelt_type_goodsList .CharmCondoleBelt_type_goods .CharmCondoleBelt_type_goods_img .CharmCondoleBelt_type_goods_tag {
+  position: absolute;
+  left: 4%;
+  bottom: 0;
+  width: 1.46rem;
+  height: 0.7rem;
+}
+.CharmCondoleBelt_type_goodsList .CharmCondoleBelt_type_goods .CharmCondoleBelt_type_goods_img .CharmCondoleBelt_type_goods_tag img {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.CharmCondoleBelt_type_goodsList .CharmCondoleBelt_type_goods .CharmCondoleBelt_type_goods_price {
+  margin-top: .5em;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  color: #f46c77;
+  font-size: 0.6rem;
+}
+.CharmCondoleBelt_type_goodsList .CharmCondoleBelt_type_goods .CharmCondoleBelt_type_goods_price del {
+  font-size: 0.6rem;
+  color: #999;
+}
+.CharmCondoleBelt_type_goodsList .CharmCondoleBelt_type_goods .CharmCondoleBelt_type_goods_beBuy {
+  margin-top: .5em;
+  font-size: 0.56rem;
+  width: 100%;
+  text-align: center;
+  color: #999;
+}
+.CharmCondoleBelt_type_goodsList .CharmCondoleBelt_type_goods .CharmCondoleBelt_type_goods_title {
+  color: #3c2402;
+  margin: 0 auto;
+  margin-top: .5em;
+  width: 95%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 1em;
+  text-align: center;
+}
+.totop {
+  width: 1.72rem;
+  position: fixed;
+  bottom: 2.8rem;
+  right: 0.4rem;
+  display: none;
+}
+.totop img {
+  width: 100%;
+}
+.footer {
+  width: 100%;
+  height: 2rem;
+  background: #fafafa;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 250;
+  border-top: 1px solid #E5E5E5;
+  margin: 0 auto;
+}
+.footer a {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  color: #666666;
+  overflow: hidden;
+  padding-bottom: 0.2rem;
+  -webkit-box-flex: 1;
+  float: left;
+  width: 25%;
+}
+.footer a i {
+  margin: 0.16rem auto;
+  margin-top: 0.26rem;
+  display: block;
+  text-align: left;
+  width: 0.76rem;
+  height: 0.76rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.footer a span {
+  font-size: 0.56rem;
+  display: block;
+}
+.footer a .f_active {
+  color: #FF3366;
+}

@@ -1,0 +1,295 @@
+a,
+input,
+button {
+  /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+  /*清除按钮的圆角*/
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+  /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #f4f4f4;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body * {
+  /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.myCenter_nav {
+  background-color: #ffffff;
+  width: 100%;
+  height: 2.16rem;
+  line-height: 2.16rem;
+  border-bottom: 0.04rem solid #dddddd;
+  text-align: center;
+  color: #666;
+  font-size: 0.8rem;
+  position: relative;
+}
+.myCenter_nav i {
+  top: 0;
+  display: block;
+  position: absolute;
+  font-family: simsun;
+  font-size: 1rem;
+  left: 0.72rem;
+}
+.myCenter_nav b {
+  top: 0;
+  position: absolute;
+  right: 0.72rem;
+  display: block;
+  text-decoration: none;
+  color: #666666;
+}
+.myCenter_collection {
+  width: 100%;
+  height: 7.4rem;
+  background: url(../img/myCenterCollectionBg.jpg) no-repeat;
+  background-size: 100% 100%;
+  border-bottom: 0.04rem solid #ffffff;
+  overflow: hidden;
+}
+.myCenter_collection .myCenter_headAndName {
+  width: 100%;
+  height: 4.6rem;
+  overflow: hidden;
+  border-bottom: 0.02rem solid rgba(255, 255, 255, 0.5);
+}
+.myCenter_collection .myCenter_headAndName .myCenter_headPortrait {
+  margin-top: 0.8rem;
+  text-align: center;
+}
+.myCenter_collection .myCenter_headAndName .myCenter_headPortrait img {
+  width: 2.12rem;
+  border-radius: 1.06rem;
+}
+.myCenter_collection .myCenter_headAndName .myCenter_name {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 0.72rem;
+}
+.myCenter_collection .myCenter_collectionInf {
+  width: 100%;
+  height: 2.78rem;
+}
+.myCenter_collection .myCenter_collectionInf ul {
+  width: 100%;
+  height: 2.78rem;
+}
+.myCenter_collection .myCenter_collectionInf ul li {
+  width: 25%;
+  height: 2.78rem;
+  font-size: 0.54rem;
+  text-align: center;
+  color: #ffffff;
+  float: left;
+}
+.myCenter_collection .myCenter_collectionInf ul li span {
+  display: block;
+  height: 50%;
+  box-sizing: border-box;
+  padding-top: 0.4rem;
+  font-size: 0.8rem;
+}
+.myCenter_collection .myCenter_collectionInf ul li span .coupon {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.9rem;
+  background: url(../img/myCenterSprite.png) no-repeat 0 -2.04rem;
+  background-size: 6.26rem;
+}
+.myCenter_collection .myCenter_collectionInf ul li span .address {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.9rem;
+  background: url(../img/myCenterSprite.png) no-repeat 0 -4.28rem;
+  background-size: 6.26rem;
+}
+.myCenter_collection .myCenter_collectionInf ul li p {
+  height: 50%;
+}
+.myCenter_collection .myCenter_collectionInf ul .border_right {
+  width: 24%;
+  border-right: 0.02rem solid rgba(255, 255, 255, 0.5);
+}
+.myCenter_share {
+  height: 1.96rem;
+  line-height: 1.96rem;
+  margin-top: 0.36rem;
+  background-color: #ffffff;
+  color: #666666;
+}
+.myCenter_share img {
+  display: block;
+  float: left;
+  height: 1.24rem;
+  margin-top: 0.36rem;
+  margin-left: 0.56rem;
+}
+.myCenter_share .myCenter_share_recommend {
+  font-size: 0.76rem;
+  float: left;
+  margin-left: 0.36rem;
+}
+.myCenter_share .myCenter_toShare {
+  float: right;
+  font-size: 0.58rem;
+  margin-right: 0.56rem;
+}
+.myCenter_share .myCenter_toShare i {
+  margin-left: 0.36rem;
+  font-family: simsun;
+}
+.myCenter_orderForm {
+  background-color: #ffffff;
+  margin-top: 0.48rem;
+  height: 2.52rem;
+  width: 100%;
+}
+.myCenter_orderForm ul {
+  width: 100%;
+  height: 2.52rem;
+}
+.myCenter_orderForm ul li {
+  text-align: center;
+  width: 25%;
+  float: left;
+  height: 2.52rem;
+  font-size: 0.56rem;
+  color: #666666;
+}
+.myCenter_orderForm ul li span {
+  height: 50%;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 0.36rem;
+}
+.myCenter_orderForm ul li span i {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url(../img/myCenterSprite.png) no-repeat;
+  background-size: 6.26rem;
+  background-position-y: bottom;
+}
+.myCenter_orderForm ul li p {
+  padding-top: 0.2rem;
+}
+.myCenter_orderForm ul li:nth-child(1) i {
+  background-position-x: 0.16rem;
+}
+.myCenter_orderForm ul li:nth-child(2) i {
+  background-position-x: -1.7rem;
+}
+.myCenter_orderForm ul li:nth-child(3) i {
+  background-position-x: -3.58rem;
+}
+.myCenter_orderForm ul li:nth-child(4) i {
+  background-position-x: -5.48rem;
+}
+.myCenter_orderForm ul .active span i {
+  background-position-y: -5.4rem;
+}
+.myCenter_orderForm ul .active p {
+  color: #FF3366;
+}
+.myCenter_orderFormPage {
+  width: 100%;
+  height: 9.4rem;
+}
+.myCenter_orderFormPage .myCenter_orderForm_emptyPage {
+  width: 100%;
+  height: 100%;
+}
+.myCenter_orderFormPage .myCenter_orderForm_emptyPage p {
+  width: 100%;
+  text-align: center;
+  font-size: 0.64rem;
+  color: #666666;
+}
+.myCenter_orderFormPage .myCenter_orderForm_emptyPage p img {
+  margin-top: 1.2rem;
+  width: 4.56rem;
+  margin-bottom: 0.3rem;
+}
+.myCenter_orderFormPage .myCenter_orderForm_emptyPage .myCenter_orderForm_emptyMessage {
+  margin-top: 1.4rem;
+  text-align: center;
+  font-size: 0.6rem;
+  color: #999999;
+  transform: scale(0.6);
+}
+.myCenter_orderFormPage .myCenter_orderForm_orderFormPage {
+  width: 100%;
+  height: 100%;
+  display: none;
+  text-align: center;
+}
+.myCenter_orderFormPage .myCenter_orderForm_orderFormPage a {
+  display: inline-block;
+  margin-top: 4rem;
+  color: #FF3366;
+  text-decoration: none;
+}
+.footer {
+  width: 100%;
+  height: 2rem;
+  background: #fafafa;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 250;
+  border-top: 1px solid #E5E5E5;
+  margin: 0 auto;
+}
+.footer a {
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  color: #666666;
+  overflow: hidden;
+  padding-bottom: 0.2rem;
+  -webkit-box-flex: 1;
+  float: left;
+  width: 25%;
+}
+.footer a i {
+  margin: 0.16rem auto;
+  margin-top: 0.26rem;
+  display: block;
+  text-align: left;
+  width: 0.76rem;
+  height: 0.76rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.footer a span {
+  font-size: 0.56rem;
+  display: block;
+}
+.footer a .f_active {
+  color: #FF3366;
+}

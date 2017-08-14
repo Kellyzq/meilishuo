@@ -1,0 +1,243 @@
+@r:50rem;
+
+a,
+input,
+button {
+    /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+    /*清除按钮的圆角*/
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+    /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+//overflow: hidden;
+//overflow: auto;
+}
+html{
+  width: 100%;
+  height: 100%;
+//overflow: hidden;
+}
+body * {
+    /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background: #FFFFFF;
+}
+//清除浮动
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+//头部
+.head{
+    width: 100%;
+    height: 90/@r;
+    text-align: center;
+    color: #333333;
+    line-height: 90/@r;
+    border-bottom: 1px solid rgba(51,51,51,.15);
+    overflow: hidden;
+    background: #FFFFFF;
+    .back_icon{
+        float: left;
+        width: 80/@r;
+        padding-left: 30/@r;
+        text-align: left;
+        vertical-align: middle;
+        z-index: 5;
+        img{
+            display: inline-block;
+            width:20/@r;
+            margin-top: 28/@r;
+        }
+    }
+    .right_btn{
+        font-size: 36/@r;
+        float: right;
+        padding-right: 30/@r;
+//      height: 88/@r;
+        z-index: 5;
+        color: #333;
+    }
+    .title{
+        text-align: center;
+        z-index: 1;
+        a{
+            font-size: 38/@r;
+            color: #000;
+        }
+    }
+}
+
+.user_login{
+    .login_btn{
+        padding: 70/@r 30/@r 0;
+        p{
+             text-align: center;
+            a{
+            display: inline-block;
+            width: 210/@r;
+            height: 210/@r;
+            margin:  0 25/@r;
+            border-radius: 50%;
+            background: url(../img/qq.png) no-repeat center;
+            background-size: 100%;
+        }
+        }
+    }
+    .login_title{
+        padding: 60/@r 30/@r 0;
+        margin-bottom: -27/@r;
+        span{
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            color: #666666;
+            font-size: 28/@r;
+            position: relative;
+            &:before,&:after{
+                content: '';
+                width: 210/@r;
+                border-bottom: 1px solid #D8D8D8;
+                position: absolute;
+                top: 10/@r;
+//              left: 0;
+            }
+            &:before{
+                left: 0;
+            }
+            &:after{
+                right: 0;
+            }
+        }
+    }
+    .form_wrap{
+        padding: 60/@r 30/@r 24/@r;
+        .form_mod_wrap{
+            margin-bottom: 30/@r;
+            .form_mod{
+                padding: 23/@r 30/@r;
+                margin-bottom: 20/@r;
+                line-height: 32/@r;
+                border-radius: 3px;
+                font-size: 32/@r;
+                background: #f2f2f2;
+                input{
+                    width: 100%;
+                    height: 44/@r;
+                    display: block;
+                    color: #444444;
+                    font-size: 34/@r;
+                    background: #F2F2F2;
+                    border: 0;
+                    outline: none;
+                }
+            }
+        }
+        //验证码
+        .img_code{
+            display: none;
+            margin-bottom: 20/@r;
+            width: 100%;
+            overflow: hidden;
+            p{
+                font-size: 28/@r;
+                margin: 30/@r auto;
+                color: #666666;
+                a{
+                    float: right;
+                    color: #FF3366;
+                    text-decoration: underline;
+                }
+            }
+            ul{
+                width: 110%;
+                li{
+                    display: block;
+                    width: 160/@r;
+                    height: 160/@r;
+                    float: left;
+                    overflow: hidden;
+                    cursor: pointer;
+                    background-repeat: no-repeat;
+                    background-size: 640/@r auto;
+                    transition: all 0.5s ease-in-out;
+                    margin-right: 15/@r;
+                }
+                .one{
+                    
+                    background: url(../img/1.png) no-repeat;
+                }
+                .two{
+                     background: url(../img/2.png) no-repeat;
+                }
+                .three{
+                     background: url(../img/3.png) no-repeat;
+                }
+                .four{
+                     background: url(../img/4.png) no-repeat;
+                }
+            }
+        }
+        
+        .login_show{
+            display: inline-block;
+            width: 100%;
+            height: 90/@r;
+            line-height: 90/@r;
+            background: #FF5777;
+            color: #FFFFFF;
+            text-align: center;
+            border-radius: 3px;
+            font-size: 38/@r;
+            span{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .findpwd{
+            font-size: 28/@r;
+//          width:50%;
+            float: right;
+            padding-right: 30/@r;
+            color: #494949;
+            margin-top: 30/@r;
+        }
+        .inf{
+            display: none;
+            width: 300/@r;
+            height:60/@r;
+            background: #FF5777;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 60/@r;
+            font-size: 32/@r;
+            margin-top: 20/@r;
+            margin-left: 200/@r;
+        }
+    }
+}

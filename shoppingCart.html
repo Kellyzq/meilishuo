@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<!--视口宽度为设备宽度，不能缩放-->
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<!--qq浏览器下强制横盘或者竖屏显示-->
+		<meta name="x5-orientation" content="portrait" />
+		<!--qq浏览器下是否可以全屏-->
+		<meta name="x5-fullscreen" content="true" />
+		<!--UC浏览器下强制横盘或者竖屏显示-->
+		<meta name="screen-orientation" content="portrait">
+		<!--UC浏览器下是否可以全屏-->
+		<meta name="full-screen" content="yes">
+		<!--是否禁止识别手机和邮箱-->
+		<meta name="format-detection" content="telephone=yes, email=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shoppingCart.css"/>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery_utils.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/shoppingCart.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--购物车导航栏-->
+		<nav class="shoppingCartNav">
+			<i>&lt;</i>
+			<span>购物车</span>
+			<a href="index.html">首页</a>
+		</nav>
+		<!--购物车商品列表-->
+		<section class="goods_list">
+			<ul>
+				<!--<li>
+					<label>
+						<input type="checkbox"/>
+						<span></span>
+					</label>
+					<img class="goods_inf_img" src="img/upload_815l8hiiej435l1fbi8j6h7ijg431_640x900.jpg_560x999.jpg"/>
+					<div class="goods_inf_con">
+						<p class="goods_inf_title">学院风短裙半身裙学生百褶裙子女</p>
+						<p>
+							<span class="goods_inf_color">颜色：白色</span>
+							<span class="goods_inf_size">尺码：L</span>
+						</p>
+						<ol>
+							<li class="minus"></li>
+							<li class="goods_inf_num">1</li>
+							<li class="plus"></li>
+						</ol>
+					</div>
+					<div class="goods_inf_price">
+						<i>￥49.91</i>
+						<del>￥71.30</del>
+						<b></b>
+					</div>
+				</li>-->
+			</ul>
+		</section>
+		<!--如果购物车为空则显示-->
+		<section class="shoppingCartEmpty">
+			<p>您的购物车还空着呢，</p>
+			<p>美物这么多，快去看看吧～</p>
+			<a href="index.html" class="btn">去逛逛</a>
+		</section>
+		<!--前往商品结算-->
+		<section class="goods_total">
+			<label>
+				<input type="checkbox" checked="checked"/>
+				<span></span>
+				<i>全选</i>
+			</label>
+			<div class="total_cost">
+				<p>合计：<i>￥0.00</i></p>
+				<p class="tips">不含运费、优惠扣减</p>
+			</div>
+			<a>去结算<span class="settle_account">(111)</span></a>
+		</section>
+		<section class="footer">
+			<a href="index.html">
+				<i style="background-image: url(img/home_w.png);"></i>
+				<span>首页</span>
+			</a>
+			<a href="classification.html">
+				<i style="background-image: url(img/fl_w.png);"></i>
+				<span>分类</span>
+			</a>
+			<a href="shoppingCart.html">
+				<i style="background-image: url(img/car_a.png);"></i>
+				<span class="f_active">购物车</span>
+			</a>
+			<a href="myCenter.html" id="person">
+				<i style="background-image: url(img/m_w.png);"></i>
+				<span>我</span>
+			</a>
+		</section>
+	</body>
+</html>

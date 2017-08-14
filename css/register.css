@@ -1,0 +1,223 @@
+a,
+input,
+button {
+  /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+  /*清除按钮的圆角*/
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+  /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body * {
+  /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: #FFFFFF;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.head {
+  width: 100%;
+  height: 1.8rem;
+  text-align: center;
+  color: #333333;
+  line-height: 1.8rem;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.15);
+  overflow: hidden;
+  background: #FFFFFF;
+}
+.head .back_icon {
+  float: left;
+  width: 1.6rem;
+  padding-left: 0.6rem;
+  text-align: left;
+  vertical-align: middle;
+  z-index: 5;
+}
+.head .back_icon img {
+  display: inline-block;
+  width: 0.4rem;
+  margin-top: 0.56rem;
+}
+.head .right_btn {
+  font-size: 0.72rem;
+  float: right;
+  padding-right: 0.6rem;
+  z-index: 5;
+  color: #333;
+}
+.head .title {
+  text-align: center;
+  z-index: 1;
+}
+.head .title a {
+  font-size: 0.72rem;
+  color: #333;
+}
+.register_wrap .form_wrap {
+  padding: 0 0.6rem;
+}
+.register_wrap .form_wrap .form_group {
+  height: 2.36rem;
+  line-height: 2.36rem;
+  padding: 0 0.6rem;
+  border-bottom: 1px solid #D8D8D8;
+  position: relative;
+}
+.register_wrap .form_wrap .form_group .area {
+  height: 1.2rem;
+  position: absolute;
+  font-size: 0.76rem;
+  color: #999999;
+}
+.register_wrap .form_wrap .form_group .area_value {
+  height: 2.36rem;
+  text-align: right;
+  color: #333333;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+.register_wrap .form_wrap .form_group .plus {
+  font-size: 0.72rem;
+  line-height: 2.4rem;
+  margin-right: 0.1rem;
+}
+.register_wrap .form_wrap .form_group .areacode {
+  display: inline-block;
+  width: 2rem;
+  border-right: 1px solid #D8D8D8;
+  font-size: 0.68rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  color: #444444;
+}
+.register_wrap .form_wrap .form_group .number {
+  width: 8rem;
+  margin-left: 0.4rem;
+  font-size: 0.68rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  border: 0;
+  color: #444444;
+  outline: none;
+}
+.register_wrap .form_wrap .form_group .msg {
+  text-align: left;
+  width: 9rem;
+  border-right: 1px solid #D8D8D8;
+  font-size: 0.68rem;
+  color: #444444;
+  border: 0;
+  outline: none;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+.register_wrap .form_wrap .form_group .msg_btn {
+  position: absolute;
+  top: 0.3rem;
+  right: 0;
+  text-align: center;
+  font-size: 0.68rem;
+  line-height: 1.82rem;
+  width: 4rem;
+}
+.register_wrap .form_wrap .confirm_btn {
+  width: 100%;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  color: #FFFFFF;
+  background: #ff5777;
+  border-radius: 3px;
+  font-size: 0.76rem;
+  text-align: center;
+  margin-top: 0.6rem;
+}
+.register_wrap .form_wrap .tip {
+  display: block;
+  font-size: 0.6rem;
+  margin-top: 0.36rem;
+  color: #666666;
+}
+.register_wrap .form_wrap .img_code {
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+}
+.register_wrap .form_wrap .img_code p {
+  font-size: 0.56rem;
+  margin: 0.6rem auto;
+  color: #666666;
+}
+.register_wrap .form_wrap .img_code p a {
+  float: right;
+  color: #FF3366;
+  text-decoration: underline;
+}
+.register_wrap .form_wrap .img_code ul {
+  width: 110%;
+}
+.register_wrap .form_wrap .img_code ul li {
+  display: block;
+  width: 3.2rem;
+  height: 3.2rem;
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 12.8rem auto;
+  transition: all 0.5s ease-in-out;
+  margin-right: 0.3rem;
+}
+.register_wrap .form_wrap .img_code ul .one {
+  background: url(../img/1.png) no-repeat;
+}
+.register_wrap .form_wrap .img_code ul .two {
+  background: url(../img/2.png) no-repeat;
+}
+.register_wrap .form_wrap .img_code ul .three {
+  background: url(../img/3.png) no-repeat;
+}
+.register_wrap .form_wrap .img_code ul .four {
+  background: url(../img/4.png) no-repeat;
+}
+.register_wrap .form_wrap .inf {
+  display: none;
+  width: 6rem;
+  height: 1.2rem;
+  background: #FF5777;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 1.2rem;
+  font-size: 0.64rem;
+  margin-top: 0.4rem;
+  margin-left: 4rem;
+}

@@ -1,0 +1,54 @@
+.box_wrap {
+  background: #FFFFFF;
+}
+.box_wrap .title {
+  padding: 0.4rem;
+  overflow: hidden;
+  font-size: 0.72rem;
+  color: #333333;
+}
+.box_wrap .wap ul {
+  border-top: 1px solid #EEEEEE;
+  margin-left: -0.2rem;
+}
+.box_wrap .wap ul li {
+  width: 25%;
+  height: 0;
+  float: left;
+  padding-bottom: 32%;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px soid #EEEEEE;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.box_wrap .wap ul li a {
+  display: block;
+  margin-left: 0;
+  color: #666666;
+}
+.box_wrap .wap ul li a .pic {
+  width: 70%;
+  height: 0;
+  padding-bottom: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.box_wrap .wap ul li a .pic img {
+  display: block;
+  width: 100%;
+}
+.box_wrap .wap ul li a b {
+  position: absolute;
+  bottom: 0.2rem;
+  width: 100%;
+  left: 0;
+  font-size: 0.56rem;
+  text-align: center;
+  font-weight: normal;
+  line-height: 2;
+  background: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+}

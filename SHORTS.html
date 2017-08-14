@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<!--视口宽度为设备宽度，不能缩放-->
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<!--qq浏览器下强制横盘或者竖屏显示-->
+		<meta name="x5-orientation" content="portrait" />
+		<!--qq浏览器下是否可以全屏-->
+		<meta name="x5-fullscreen" content="true" />
+		<!--UC浏览器下强制横盘或者竖屏显示-->
+		<meta name="screen-orientation" content="portrait">
+		<!--UC浏览器下是否可以全屏-->
+		<meta name="full-screen" content="yes">
+		<!--是否禁止识别手机和邮箱-->
+		<meta name="format-detection" content="telephone=yes, email=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/SHORTS.css"/>
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery_utils.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/SHORTS.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--导航栏-->
+		<nav class="SHORTS_nav">
+			<ul>
+				<li class="active">流行</li>
+				<li>热销</li>
+				<p>价格<span>&lt;</span></p>
+			</ul>
+			<section class="SHORTS_sort">
+				<ol>
+					<li><span>0-30</span></li>
+					<li><span>30-60</span></li>
+					<li><span>60以上</span></li>
+				</ol>
+				<div class="SHORTS_sort_data">
+					<input type="text" name="" id="minPrice" value="" /><span>-</span><input type="text" name="" id="maxPrice" value="" />
+					<button type="button" id="clearTxt">清空</button>
+					<button type="button" id="submitTxt">确定</button>
+				</div>
+			</section>
+		</nav>
+		<!--商品列表-->
+		<section class="SHORTS_type_goodsList">
+			<!--<a class="SHORTS_goods SHORTS_type_goods" href="">
+				<p class="SHORTS_type_goods_img"><img src=""/><span class="SHORTS_type_goods_tag"><img src=""/></span></p>
+				<p class="SHORTS_type_goods_title">11qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq1</p>
+				<p class="SHORTS_type_goods_price"><span>11111111</span><del>1111111111</del></p>
+				<p class="SHORTS_type_goods_beBuy">11111</p>
+			</a>-->
+		</section>
+		<!--返回顶部-->
+		<div class="totop">
+			<img src="img/totop.png"/>
+		</div>
+		<section class="footer">
+			<a href="index.html">
+				<i style="background-image: url(img/home.png);"></i>
+				<span class="f_active">首页</span>
+			</a>
+			<a href="classification.html">
+				<i style="background-image: url(img/fl_w.png);"></i>
+				<span>分类</span>
+			</a>
+			<a href="shoppingCart.html">
+				<i style="background-image: url(img/car_w.png);"></i>
+				<span>购物车</span>
+			</a>
+			<a href="myCenter.html" id="person">
+				<i style="background-image: url(img/m_w.png);"></i>
+				<span>我</span>
+			</a>
+		</section>
+	</body>
+</html>
+

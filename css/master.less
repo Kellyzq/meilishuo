@@ -1,0 +1,278 @@
+@r:50rem;
+a,
+input,
+button {
+    /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+    /*清除按钮的圆角*/
+  -webkit-appearance: none; 
+  border-radius: 0;
+}
+body { 
+    /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+html{
+  width: 100%;
+  height: 100%;
+}
+body * {
+    /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+//清除浮动
+.clearfix:after{
+   clear: both;
+   content: '';
+   display: block;
+}
+//横幅
+.master_banner{
+    width: 100%;
+    height: auto;
+    img{
+        width: 100%;
+    }
+}
+//推荐介绍
+.master_recommend{
+    color: #333333;
+    font-size: 28/@r;
+    position: relative;
+    overflow: hidden;
+    p{ 
+        width: 91%;
+        margin: 1.8em auto 1em;
+        line-height: 45/@r;
+        .pink_wave_line{
+            border-style: solid;
+            border-width: 0 0 20/@r 0;
+            border-image:url(../img/font_line1.png) 0 448 31 79 fill repeat stretch;
+        }
+        .font_bg{
+            border-style: solid;
+            border-width: 0 8/@r;
+            border-image: url(../img/font_bg.png) 0 10 fill repeat stretch;
+        }
+        .red_wave_line{
+            border-image:url(../img/font_line0.png) 0 0 repeat round;
+            -webkit-border-image: url(../img/font_line0.png) 0 0 repeat round;
+        }
+    }
+    div{
+        width: 47/@r;
+        height: 35/@r;
+        background-image: url(../img/sign.png);
+        background-size: 100%;
+        position: absolute;
+    }
+    .sign_topleft{
+        top: 20/@r;
+        left: 12/@r;
+    }
+    .sign_rightbottom{
+        bottom: 20/@r;
+        right: 20/@r;
+        transform: scaleX(-1);
+    }
+}
+//推荐商品列表
+.master_recommend_goodsList{
+    width: 100%;
+    overflow: hidden;
+    .master_recommend_goods{
+        display: block;
+        width: 50%;
+        height: 540/@r;
+        float: left;
+        font-size: 29/@r;
+        color: #555555;
+        text-decoration: none;
+        margin-bottom: 40/@r;
+        .master_recommend_goods_img{
+            width: 100%;
+            text-align: center;
+            img{
+                border-radius: 17/@r;
+                width: 88.5333333%;
+                height: 430/@r;
+                background: #f5f5f5 url(../img/loading_bg.png) no-repeat center center;
+                background-size: 50%;
+            }
+        }
+        .master_recommend_goods_price{
+            margin-top: .5em;
+            width: 100%;
+            text-indent: 2em;
+            position: relative;
+            span{
+                width: 16/@r;
+                height: 30/@r;
+                display: inline-block;
+                background-color: #ff3377;
+                border-radius:8/@r;
+                position: absolute;
+                left: 1em;
+            }
+        }
+        .master_recommend_goods_title{
+            margin: 0 auto;
+            margin-top: .5em;
+            width: 88.5333333%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            height: 1em;
+        }
+    }
+}
+//导航栏
+.master_type_nav_bg{
+    width: 100%;
+    height: 80/@r;
+    .master_type_nav{
+        width: 100%;
+        height: 80/@r;
+        overflow: hidden;
+        top: 0px;
+        left: 0px;
+        z-index: 99999;
+        ul{
+            width: 100%;
+            height: 80/@r;
+            li{
+                padding-top: 26/@r;
+                box-sizing: border-box;
+                width: 50%;
+                height: 80/@r;
+                float: left;
+                text-align: center;
+                font-size: 25/@r;
+                background-color: #f099b0;
+                span{
+                    display: inline-block;
+                    color: #000;
+                }
+            }
+            .active{
+                background-color: #ED4F79;
+                span{
+                    color: #fff;
+                    padding-bottom: 12/@r;
+                    border-bottom: 4/@r solid #FFFFFF;
+                }
+            }
+        }
+    }
+}
+//商品列表
+.master_type_goodsList{
+    width: 100%;
+    margin-top: 20/@r;
+    overflow: hidden;
+    .master_type_goods{
+        display: block;
+        width: 50%;
+        height: 600/@r;
+        float: left;
+        font-size: 28/@r;
+        color: #555555;
+        text-decoration: none;
+        .master_type_goods_img{
+            width: 100%;
+            text-align: center;
+            img{
+                width: 95%;
+                height: 464/@r;
+                background: #f5f5f5 url(../img/loading_bg.png) no-repeat center center;
+                background-size: 50%;
+            }
+        }
+        .master_type_goods_price{
+            margin-top: .5em;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            color: #f46c77;
+            font-size: 36/@r;
+            del{
+                font-size: 30/@r;
+                color: #999;
+            }
+        }
+        .master_type_goods_title{
+            color: #3c2402;
+            margin: 0 auto;
+            margin-top: .5em;
+            width: 88.5333333%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            height: 1em;
+            text-align: center;
+        }
+    }
+}
+//返回顶部
+.totop{
+    width: 86/@r;
+    position: fixed;
+    bottom: 140/@r;
+    right: 20/@r;
+    display: none;
+    img{
+        width: 100%;
+    }
+}
+//尾部
+.footer{
+    width: 100%;
+    height: 100/@r;
+    background: #fafafa;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 250;
+    border-top: 1px solid #E5E5E5;
+    margin: 0 auto;
+    a{
+        text-decoration: none;
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+        color: #666666;
+        overflow: hidden;
+        padding-bottom: 10/@r;
+        -webkit-box-flex: 1;
+        float: left;
+        width: 25%;
+        i{
+            margin: 8/@r auto;
+            margin-top: 13/@r;
+            display: block;
+            text-align: left;
+            width: 38/@r;
+            height: 38/@r;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        span{
+            font-size: 28/@r;
+            display: block;
+        }
+        .f_active{
+            color: #FF3366;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=640,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery_utils.js"></script>
+		<script src="js/login.js"></script>
+	</head>
+	<body>
+		<header class="head">
+			<p class="back_icon"><img src="img/back.png"/></p>
+			<a href="register.html" class="right_btn">注册</a>
+			<p class="title"><a href="javascript:;">登录 - 美丽说</a></p>
+		</header>
+		<section class="user_login">
+			<div class="login_btn">
+				<p><a href="javascript:;"></a></p>
+			</div>
+			<div class="login_title">
+				<span>美丽说账号登录</span>
+			</div>
+			<div class="form_wrap">
+				<div class="form_mod_wrap">
+					<div class="form_mod"><input type="text" placeholder="昵称/邮箱/手机号" id="user"/></div>
+					<div class="form_mod"><input type="password" placeholder="密码" id="pwd"/></div>
+				</div>
+				<!--验证码-->
+				<div class="yzm">
+					<div class="img_code">
+						<p>请点击下方图片，将它们翻转到正确方向<a href="javascript:;">换一组</a></p>
+						<ul>
+							<li class="one"></li>
+							<li class="two"></li>
+							<li class="three"></li>
+							<li class="four"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="login_show">
+					<span class="login" id="btn">登录</span>
+				</div>
+				<p class="clearfix">
+					<a href="javascript:;" class="findpwd">忘记密码?</a>
+				</p>
+				<!--提示信息-->
+				<p class="inf">用户名或密码错误</p>
+			</div>
+		</section>
+	</body>
+</html>

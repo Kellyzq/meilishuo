@@ -1,0 +1,323 @@
+a,
+input,
+button {
+  /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+  /*清除按钮的圆角*/
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+  /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #f4f4f4;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body * {
+  /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.shoppingCartNav {
+  background-color: #ffffff;
+  width: 100%;
+  height: 8%;
+  line-height: 2.16rem;
+  border-bottom: 0.04rem solid #dddddd;
+  text-align: center;
+  color: #666;
+  font-size: 0.8rem;
+  position: relative;
+}
+.shoppingCartNav i {
+  top: 0;
+  display: block;
+  position: absolute;
+  font-family: simsun;
+  font-size: 1rem;
+  left: 0.72rem;
+}
+.shoppingCartNav a {
+  top: 0;
+  position: absolute;
+  right: 0.72rem;
+  display: block;
+  text-decoration: none;
+  color: #666666;
+}
+.goods_list {
+  height: 75%;
+  width: 100%;
+  overflow: auto;
+}
+.goods_list ul {
+  width: 100%;
+}
+.goods_list ul li {
+  width: 100%;
+  height: 4.2rem;
+  background-color: #FFFFFF;
+  margin-bottom: 0.02rem;
+  position: relative;
+}
+.goods_list ul li label {
+  display: block;
+  position: relative;
+  width: auto;
+  height: auto;
+  float: left;
+  margin-left: 0.68rem;
+  margin-top: 1.56rem;
+  margin-right: 0.4rem;
+}
+.goods_list ul li label input {
+  position: absolute;
+  opacity: 0;
+}
+.goods_list ul li label span {
+  display: block;
+  width: 1.08rem;
+  height: 1.12rem;
+  background: url(../img/checkedboxfalse.png) no-repeat;
+  background-size: 1.08rem;
+}
+.goods_list ul li label input:checked ~ span {
+  background: url(../img/checkedboxtrue.png) no-repeat;
+  background-size: 1.08rem;
+}
+.goods_list ul li .goods_inf_img {
+  float: left;
+  display: block;
+  margin-top: 0.64rem;
+  height: 3rem;
+}
+.goods_list ul li .goods_inf_con {
+  float: left;
+  margin-left: 0.4rem;
+  margin-top: 0.64rem;
+  width: 6.2rem;
+}
+.goods_list ul li .goods_inf_con .goods_inf_title {
+  width: 10em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.62rem;
+  color: #666666;
+}
+.goods_list ul li .goods_inf_con p span {
+  font-size: 0.48rem;
+  color: #999999;
+  margin-right: 0.08rem;
+}
+.goods_list ul li .goods_inf_con ol {
+  margin-top: 0.2rem;
+}
+.goods_list ul li .goods_inf_con ol li {
+  width: auto;
+  height: 1.16rem;
+  line-height: 1.16rem;
+  float: left;
+  border: 0.02rem solid #ebe8ea;
+}
+.goods_list ul li .goods_inf_con ol .goods_inf_num {
+  border-left: none;
+  border-right: none;
+  padding: 0 0.4rem;
+  font-size: 0.6rem;
+}
+.goods_list ul li .goods_inf_con ol .minus {
+  width: 1.16rem;
+  background: url(../img/shoppingcart_sprite.png) no-repeat 0.12rem -2.32rem;
+  background-size: 2.66666666rem;
+}
+.goods_list ul li .goods_inf_con ol .plus {
+  width: 1.16rem;
+  background: url(../img/shoppingcart_sprite.png) no-repeat -1.76rem -2.32rem;
+  background-size: 2.66666666rem;
+}
+.goods_list ul li .goods_inf_price {
+  position: absolute;
+  height: 2.6rem;
+  top: 0.72rem;
+  right: 0.6rem;
+  text-align: right;
+}
+.goods_list ul li .goods_inf_price i {
+  display: block;
+  color: #ff7a9a;
+  font-size: 0.64rem;
+}
+.goods_list ul li .goods_inf_price del {
+  display: block;
+  color: #999999;
+  font-size: 0.48rem;
+}
+.goods_list ul li .goods_inf_price b {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 0.9rem;
+  height: 0.9rem;
+  background: url(../img/shoppingcart_sprite.png) no-repeat left bottom;
+  background-size: 2.66666666rem;
+}
+.shoppingCartEmpty {
+  position: fixed;
+  top: 4.6rem;
+  left: 0;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+}
+.shoppingCartEmpty p {
+  color: #666666;
+  font-size: 0.58rem;
+  text-align: center;
+  line-height: 1.2em;
+}
+.shoppingCartEmpty .btn {
+  font-size: 0.56rem;
+  border-radius: 0.08rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  line-height: 1.46rem;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  width: 3.6rem;
+  height: 1.46rem;
+  background-color: #ff6666;
+}
+.goods_total {
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  height: 9%;
+  border-top: 0.04rem solid #e3e3e3;
+  border-bottom: 0.04rem solid #e3e3e3;
+}
+.goods_total label {
+  margin-left: 0.68rem;
+  margin-top: 0.68rem;
+  display: block;
+  float: left;
+  font-size: 0.52rem;
+  position: relative;
+}
+.goods_total label input {
+  position: absolute;
+  opacity: 0;
+}
+.goods_total label span {
+  float: left;
+  display: block;
+  width: 1.08rem;
+  height: 1.12rem;
+  background: url("../img/checkedboxfalse.png") no-repeat;
+  background-size: 1.08rem;
+}
+.goods_total label input:checked ~ span {
+  background: url("../img/checkedboxtrue.png") no-repeat;
+  background-size: 1.08rem;
+}
+.goods_total label i {
+  margin-left: 0.08rem;
+  height: 1.12rem;
+  line-height: 1.12rem;
+  display: block;
+  float: left;
+}
+.goods_total .total_cost {
+  margin-top: 0.52rem;
+  margin-left: 2rem;
+  float: left;
+}
+.goods_total .total_cost p {
+  color: #666666;
+  font-size: 0.56rem;
+  margin-bottom: 0.2rem;
+}
+.goods_total .total_cost p i {
+  color: #ff7a9a;
+}
+.goods_total .total_cost .tips {
+  color: #999999;
+}
+.goods_total a {
+  display: block;
+  float: left;
+  width: 4.26rem;
+  height: 1.44rem;
+  background-color: #f66f66;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.44rem;
+  font-size: 0.58rem;
+  margin-top: 0.44rem;
+  margin-left: 0.4rem;
+  border-radius: 0.06rem;
+}
+.goods_total a .settle_account {
+  display: none;
+}
+.footer {
+  width: 100%;
+  height: 2rem;
+  background: #fafafa;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 250;
+  border-top: 1px solid #E5E5E5;
+  margin: 0 auto;
+}
+.footer a {
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  color: #666666;
+  overflow: hidden;
+  padding-bottom: 0.2rem;
+  -webkit-box-flex: 1;
+  float: left;
+  width: 25%;
+}
+.footer a i {
+  margin: 0.16rem auto;
+  margin-top: 0.26rem;
+  display: block;
+  text-align: left;
+  width: 0.76rem;
+  height: 0.76rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.footer a span {
+  font-size: 0.56rem;
+  display: block;
+}
+.footer a .f_active {
+  color: #FF3366;
+}
